@@ -18,3 +18,24 @@
   color: #675b5b;
   text-align: center;
 }
+.docInfo{
+  margin: 1rem;
+  border: 1px solid #ccc;
+  padding: 2rem 0.5rem;
+  background: #e3ffd8;
+}
+.docImg img{
+  border: 1px solid #ccc;
+  border-radius: 9rem;
+  padding: 2px;
+}
+.docImg{
+  width:160px;
+  float: left;
+}
+.docDetail{
+  display: inline-block;
+}
+b{
+  color: #c33e3e;
+}
