@@ -1,19 +1,19 @@
-# 
+# Doctor Lookup
 
-#### _ _
+#### _ Doctor Lookup will search doctor by medical condition_
 
 #### By _**Richa Shaurbh**_
 
 ## Description
 
-_It will calculate age in all planet in seconds with age left _
+_It will search doctor by medical condition populated in select bar _
 
 ## Setup/Installation Requirements
 
 * _Clone from github:
 * _Open in browser of your choice_
-*_Install npm: npm init
-*_Intall dependencies_: Install all package.json dependencies with -dev --save command
+*_Install bower dependencies_: bower install
+*_Intall npm dependencies_: npm install
 *_Build_: gulp build
 *_Browser sync_: gulp serve
 *_Syntax Error_: gulp jshint
