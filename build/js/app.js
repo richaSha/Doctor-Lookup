@@ -39,6 +39,20 @@ var Doctor = exports.Doctor = function () {
         $('.conditionList').append("<option value=\"" + data.uid + "\">" + data.name + "</option>");
       });
     }
+  }, {
+    key: "findDoctorList",
+    value: function findDoctorList() {
+      var self = this;
+      var request = new XMLHttpRequest();
+      request.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          self.doctorList(JSON.parse(this.responseText));
+        }
+      };
+    }
+  }, {
+    key: "doctorList",
+    value: function doctorList() {}
   }]);
 
   return Doctor;
@@ -52,6 +66,17 @@ var _doctorLookup = require("./../js/doctor-lookup.js");
 $(document).ready(function () {
   var doctorObj = new _doctorLookup.Doctor();
   doctorObj.findConditionList();
+  $(".findDoc").click(function () {
+    var condition = $('.conditionList').val();
+    var name = $('.name').val();
+    try {
+      if (condition == "non" || name == "name") {
+        throw "Please fill below data";
+      } else {}
+    } catch (e) {
+      debugger;
+    }
+  });
 });
 
 },{"./../js/doctor-lookup.js":1}]},{},[2]);
