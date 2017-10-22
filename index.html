@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="build/css/vendor.css">
+  <link rel="stylesheet" href="build/css/app.css">
+  <script src="build/js/vendor.min.js"></script>
+  <script type="text/javascript" src="build/js/app.js"></script>
+  <title></title>
+</head>
+  <body>
+    <div class="jumbotron">
+      <h1>Doctor Lookup</h1>
+    </div>
+    <div class="container-fluid">
+      <div class="searchPage">
+        <div class="form-group">
+          <label for="name">Pacient Name</label>
+          <input type="text" class="form-class" placeholder="Name">
+        </div>
+        <div class="form-group">
+          <label for="condition">Condition</label>
+          <select class="form-class conditionList" name="">
+            <option value="non">Please Select</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="location">Location</label>
+          <input type="text" class="form-class" value="Portland" disabled>
+        </div>
+        <input type="button" class="btn findDoc" value="Find">
+      </div>
+    </div>
+  </body>
+</html>

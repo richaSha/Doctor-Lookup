@@ -1,0 +1,20 @@
+.jumbotron{
+  background-image: url(./../../img/banner.png);
+  margin: 0;
+  background-size: cover;
+  color: #f8fcff;
+  text-align: center;
+}
+.container-fluid{
+  padding: 0;
+}
+.searchPage{
+  width: 50%;
+  margin: 10% 25%;
+  border: 1px solid #ccc;
+  padding: 4rem 10rem;
+  border-radius: 2rem;
+  background: #ccdef1;
+  color: #675b5b;
+  text-align: center;
+}
